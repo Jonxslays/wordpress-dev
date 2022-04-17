@@ -1,0 +1,6 @@
+.env
+.venv
+wordpress/*
+!.gitkeep
+*.tar
+*.gz
