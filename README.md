@@ -35,6 +35,10 @@ docker-compose up
 # or `docker-compose up -d` to run in the background
 ```
 
+The nginx config is set to proxy requests from `wp.local`, which is where
+you should visit in your browser after running docker-compose to complete
+the WordPress installation.
+
 ## License
 
 This repository is licensed under the

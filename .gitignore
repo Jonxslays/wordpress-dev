@@ -4,3 +4,5 @@ wordpress/*
 !.gitkeep
 *.tar
 *.gz
+*.key
+*.pem
