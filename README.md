@@ -31,11 +31,14 @@ cp .env.example .env
 ./scripts/get_wordpress.sh
 # Follow the prompts to download WordPress
 
+sudo echo "127.0.0.1 wp.local www.wp.local" >> /etc/hosts
+# Add wp.local to your hosts file
+
 docker-compose up
 # or `docker-compose up -d` to run in the background
 ```
 
-The nginx config is set to proxy requests from `wp.local`, which is where
+The nginx config is set to proxy requests from `http://wp.local`, which is where
 you should visit in your browser after running docker-compose to complete
 the WordPress installation.
 
