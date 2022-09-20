@@ -42,6 +42,10 @@ The nginx config is set to proxy requests from `http://wp.local`, which is where
 you should visit in your browser after running docker-compose to complete
 the WordPress installation.
 
+When filling the Database credentials, use the same username/password combo
+you used in the `.env`, and use `wp-mysql` as the host. This connects to the
+`wp-mysql` docker container.
+
 ## License
 
 This repository is licensed under the
